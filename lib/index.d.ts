@@ -12,7 +12,7 @@ import { Boom } from '@hapi/boom';
 /**
  * An HTTP request client.
  */
-declare class Client {
+export class Client {
 
     /**
      * An object containing the node agents used for pooling connections for `http` and `https`.
@@ -132,7 +132,7 @@ declare class Client {
 }
 
 
-declare namespace Client {
+export namespace Client {
 
     interface Options extends request.Options, read.Options {
 
@@ -346,5 +346,5 @@ declare namespace Client {
 }
 
 
-declare const client: Client;
-export = client;
+// declare const client: Client;
+// export = client;

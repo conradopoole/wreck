@@ -26,7 +26,9 @@
     },
     "scripts": {
         "test": "lab -t 100 -L -a @hapi/code -m 10000 -Y",
-        "test-cov-html": "lab -r html -o coverage.html -a @hapi/code -m 10000"
+        "test-cov-html": "lab -r html -o coverage.html -a @hapi/code -m 10000",
+        "compile": "tsc lib/index.d.ts",
+        "prepare": "tsc lib/index.d.ts"
     },
     "license": "BSD-3-Clause"
 }
